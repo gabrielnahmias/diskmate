@@ -1,14 +1,26 @@
 <?php
 
+/*!
+ * DiskMate v1.0.0
+ * http://github.com/terrasoftlabs/diskmate
+ *
+ * Copyright © 2012 Gabriel Nahmias.
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * TODO: Add output formats like Canommonon.
+ *		 
+ */
+
 require_once "common.php";
 
 if ( !$_SESSION[TEXT_IN] )
 	header("Location: pw.php");
 
-import_request_variables("g");
-
 $details = false;
 $exists = false;
+
+import_request_variables("g");
 
 if( !isset($d) )
 	$d = getcwd();
