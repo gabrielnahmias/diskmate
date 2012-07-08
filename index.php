@@ -1,7 +1,7 @@
 <?php
 
 /*!
- * DiskMate v1.0.0
+ * DiskMate v1.0.1
  * http://github.com/terrasoftlabs/diskmate
  *
  * Copyright © 2012 Gabriel Nahmias.
