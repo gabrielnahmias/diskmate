@@ -24,10 +24,10 @@ import_request_variables("g");
 
 if( !isset($d) )
 	$d = getcwd();
-else if ( empty($d) )
-	$d = ROOT;
-else
-	$d = ROOT . $d;
+//else if ( empty($d) )
+//	$d = ROOT;
+//else
+//	$d = ROOT . $d;
 
 if ( file_exists($d) )
 	$exists = true;
@@ -49,6 +49,8 @@ if ( !isset($nhf) ):
 
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
+<script src="js/functions.js" type="text/javascript"></script>
+
 <script>
 
 $( function() {
@@ -56,6 +58,24 @@ $( function() {
 	$(".overlay").fadeTo(500, 0);
 	
 } );
+
+// When closing the window, logout if there's no cookie set to be remembered.
+
+// TODO:	Add json.php/js to the system.
+
+if ( !getCookie("remember_tvii") ) {
+	
+	console.debug("No cookie.");
+	
+	window.onbeforeonload = function() {
+		
+		console.debug("Logging out.");
+		
+		location.href = "logout.php";
+		
+	}
+	
+}
 
 </script>
 
@@ -71,11 +91,11 @@ $( function() {
 	
 	<div id="content">
 		
-		<label for="root">Root:</label> <a href="?d="><input id="root" readonly="readonly" title="Examine the root directory of this web server." type="text" value="<?=ROOT?>" /></a>
+		<!--<label for="root">Root:</label> <a href="?d="><input id="root" readonly="readonly" title="Examine the root directory of this web server." type="text" value="<?=ROOT?>" /></a>-->
 		
 		<form id="analysis" name="analysis" method="GET" action="<?=$_SERVER["PHP_SELF"]?>">
 			
-			<label for="d">Directory:</label> <input id="d" name="d" value="<?=str_replace(ROOT, "", $d)?>" type="text" /> 
+			<label for="d">Directory:</label> <input id="d" name="d" value="<?=$d//str_replace(ROOT, "", $d)?>" type="text" /> 
 			
 			<input type="submit" value="Calculate" /> 
 			
