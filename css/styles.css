@@ -1,0 +1,262 @@
+body,
+html,
+input {
+	color: #333333;
+	font: 12px Verdana, Geneva, sans-serif;
+}
+
+h1 {
+    border-bottom: 1px dotted #CCCCCC;
+    margin-bottom: 10px;
+}
+
+input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="checkbox"]),
+fieldset,
+textarea {
+	
+	border-radius: 10px;
+	
+	-icab-border-radius: 10px;
+	
+	-moz-border-radius: 10px;
+	
+	-webkit-border-radius: 10px;
+	
+	-o-border-radius: 10px;
+	
+	-ms-border-radius: 10px;
+	
+	-khtml-border-radius: 10px;
+	
+}
+
+input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="checkbox"]),
+textarea,
+.transition {
+	
+	transition: all .5s ease-out;
+	
+	-moz-transition: all .5s ease-out;
+	
+	-ms-transition: all .5s ease-out;
+	
+	-webkit-transition: all .5s ease-out;
+	
+}
+
+input[type="submit"] {
+	
+	font-size: 12px;
+	
+	margin-left: 5px;
+	
+}
+
+input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="checkbox"]),
+textarea {
+	
+	border: 1px solid #CCCCCC;
+			
+	font-size: 13px;
+	
+	margin-bottom: 10px;
+	
+	padding: 3px;
+	
+	width: 188px;
+	
+}
+
+input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="checkbox"]):focus,
+input[readonly]:hover,
+textarea:focus {
+	
+	transform: scale(1.015);
+	
+	-moz-transform: scale(1.015);
+	
+	-ms-transform: scale(1.015);
+	
+	-webkit-transform: scale(1.015);
+	
+}
+
+input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="checkbox"]):not([readonly]):focus,
+textarea:focus {
+	
+	background: #FEFFD2 !important;
+	
+	border: 1px solid #FEFFD2;
+	
+	box-shadow: 0 0 5px 0 #6195C4;
+	
+	outline: none;
+	
+}
+
+/*	The next bit is debatable... it works and what it does is make the border consistent when hovering
+ *	over the element while it's focused.
+ */
+
+input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="checkbox"]):not([readonly]):focus:hover,
+textarea:focus:hover {
+	
+	border: 1px solid #FEFFD2;
+	
+}
+
+input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="checkbox"]):not([readonly]):hover,
+textarea:hover {
+	
+	background: #FFFDE6;
+	
+	border: 1px solid #666666;
+	
+}
+
+input[readonly] {
+	
+	background: #EEEEEE !important;
+	
+	border-color: #666666 !important;
+	
+	color: #666666 !important;
+	
+	cursor: pointer;
+	
+}
+
+input[type="checkbox"] {
+	cursor: pointer;
+	margin-top: 2px;
+	position: absolute;
+}
+	
+	.webkit input[type="checkbox"] {
+		margin-top: 1px;
+	}
+	
+input[type="checkbox"] + label {
+	margin-left: 20px;
+	width: auto !important;
+}
+
+input[type="text"] {/*
+	margin-left: 3px;
+	*/width: 570px !important;
+}
+
+::-webkit-input-placeholder {
+	
+	color: #999999;
+	
+}
+
+:-moz-placeholder {
+	
+	color: #999999;
+	
+}
+
+label {
+	cursor: pointer;
+	display: inline-block;
+    font-weight: bold;
+    width: 80px;
+}
+
+table tr td:first-child {
+	font-weight: bold;
+	padding-right: 30px;
+}
+
+#analysis {
+    border-bottom: 1px dotted #CCCCCC;
+}
+	
+	#main #analysis {
+		padding-bottom: 8px;
+	}
+	
+#container {
+	margin: auto;
+	width: 760px;
+}
+
+.cbox-wrap {
+	display: inline-block;
+	position: relative;
+}
+
+.file {
+	display: inline-block;
+	margin: 5px 0;
+	width: 350px;
+}
+
+.file-size {
+	font-weight: bold;
+	vertical-align: text-top;
+}
+
+.info {
+	float: right;
+}
+
+.list {
+    border: 1px solid #CCCCCC;
+    border-radius: 15px 15px 15px 15px;
+	display: inline-block;
+	font-size: 11px;
+	font-style: italic;
+    height: 300px;
+    margin: 10px 0 0 0;
+    overflow: auto;
+    padding: 10px;
+	position: relative;
+    width: 450px;
+}
+
+.list:last-child {
+	margin-right: 0;
+}
+
+	.list .contents {
+		
+	}
+
+	.list .info {
+		float: right;
+	}
+	
+	.list .title {
+		border-bottom: 1px dotted #999999;
+		font-size: 14px;
+		font-weight: bold;
+		margin-bottom: 15px;
+		padding: 0 0 3px;
+		text-align: center;
+	}
+
+.overlay {
+	background: #000000;
+	opacity: 0.3;
+}
+
+.top-dir {
+	border-bottom: 1px dotted #999999;
+	display: inline-block;
+	font-weight: bold;
+	width: 100%;
+}
+
+.total {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.version {
+	color: #AAA;
+	font-size: 12px;
+}
