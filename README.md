@@ -7,7 +7,7 @@ What does it do?
 -----------
 
 * Gives you disk usage information about whatever folder you'd like on your web server (as dictated by the `DOCUMENT_ROOT`).
-* Provides a simple password system (you can change this in `config.php`).
+* Provides a simple password system (you can change this in `config.php`).  You can also set to be remembered for 30 days.
 * Gets the boss off your back light _**that!**_
 
 How to use it
